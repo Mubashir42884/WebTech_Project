@@ -1,7 +1,7 @@
 <html>
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Share Expense</title>
+    <title>Exp/Imp List</title>
 </head>
 <body style="font-family: Quicksand ;">
     <table border="0">
@@ -22,7 +22,7 @@
         <tr style="font-size: 26px;">
 
             <td colspan="3">
-                <h1 style="font-size: 38px; color: #4e0755; border-radius: 5px;" align="center">Share Expens List</h1>
+                <h1 style="font-size: 38px; color: #4e0755; border-radius: 5px;" align="center">Export/Import Expense List</h1>
             </td>
                 
         </tr>
@@ -31,7 +31,7 @@
             <td valign="top" >
                 <form>
                 <fieldset style="border-radius: 30px;">
-                    <legend style="color: #4e0755; border-radius: 5px;"><b>SEARCH EXPENSE</b></legend>
+                    <legend style="color: #4e0755; border-radius: 5px;"><b>EXPORT EXPENSE</b></legend>
                     <table border="0">
                         <tr style="font-size: 22px;">
                             <td >
@@ -57,29 +57,38 @@
 
                             <td>
                                 : <input size="30" type="text" name="expname" style="font-family:'Quicksand'; font-size: 18px;">
+                                <td>
+                                    <input type="submit" name="select" value="Search" style="font-family:'Quicksand'; font-size: 18px;">
+                                    <input type="reset" name="reset" value="Reset" style="font-family:'Quicksand'; font-size: 18px;">
+                                </td>
                             </td>
                             
                         </tr>
-
-                        <tr>
-                            <td>
-                            <input type="submit" name="select" value="Search" style="font-family:'Quicksand'; font-size: 18px;">
-                            <input type="reset" name="reset" value="Reset" style="font-family:'Quicksand'; font-size: 18px;">
+                             
+                        <tr style="font-size: 22px;">
+                            <td >
+                                <label>Select Export Format </label>
                             </td>
+                            
+                            <td>
+                                :
+                                <input type="radio" name="formattype" id="formattype"> Text File(.txt)
+                                <input type="radio" name="formattype" id="formattype"> PDF File(.pdf)
+                            </td> 
                         </tr>
                     </table>
                 </fieldset>
                 </form>
             </td>
 
-            <td width="1250" height="95" rowspan="3">
+            <td width="1100" height="95" rowspan="4">
                 <h2 align="center">Data View</h2>
             </td>
         </tr>
 
         <tr>
             <td align="center" colspan="1" height="80">
-                <input type="submit" name="select" value="Select Expense" style="font-family:'Quicksand'; font-size: 26px; font-weight: bolder;">
+                <input type="submit" name="export" value="Export" style="font-family:'Quicksand'; font-size: 26px; font-weight: bolder;">
             </td>
         </tr>
 
@@ -87,33 +96,25 @@
             <td valign="top" colspan="1">
                 <form>
                 <fieldset style="border-radius: 30px;">
-                    <legend style="color: #4e0755; border-radius: 5px;"><b>SHARE EXPENSE VIA</b></legend>
+                    <legend style="color: #4e0755; border-radius: 5px;"><b>IMPORT EXPENS</b></legend>
                     <table border="0">
-                        <tr  width="900">
-                            <td width="250" align="center">
-                                <a href="https://gmail.com" target="_blank">
-                                    <img src="Gmail Icon.png" height="75"><br>
-                                    <h4 style="font-size: 18px; color: #4e0755; border-radius: 5px;" align="center">Gmail</h4>
-                                </a>
-                            </td>
-                            <td width="250" align="center">
-                                <a href="https://messenger.com" target="_blank">
-                                    <img src="Messenger Icon.png" height="75"><br>
-                                    <h4 style="font-size: 18px; color: #4e0755; border-radius: 5px;" align="center">Messenger</h4>
-                                </a>
-                            </td>
-                            <td width="250" align="center">
-                                <a href="https://web.whatsapp.com" target="_blank">
-                                    <img src="WhatsApp Icon.png" height="75"><br>
-                                    <h4 style="font-size: 18px; color: #4e0755; border-radius: 5px;" align="center">WhatsApp</h4>
-                                </a>
+                        <tr style="font-size: 22px;">
+
+                            <td>
+                                <input type="file" name="importfile" style="font-family:'Quicksand'; font-size: 22px; font-weight: bolder;">
+                                <br><span style="font-size: 16px; color: red;"><i>(*Only PDF and Text File*)</i></span>
                             </td>
                         </tr>
                     </table>
                 </fieldset>
                 </form>
             </td>
+        </tr>
 
+        <tr>
+            <td align="center" colspan="1" height="80">
+                <input type="submit" name="import" value="Import" style="font-family:'Quicksand'; font-size: 26px; font-weight: bolder;">
+            </td>
         </tr>
 
         <tr>
