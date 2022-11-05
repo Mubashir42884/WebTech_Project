@@ -9,7 +9,7 @@
 <html>
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>- Dashboard</title>
+    <title>Dashboard</title>
 </head>
 <body style="font-family: Quicksand ;">
     <table border="0">

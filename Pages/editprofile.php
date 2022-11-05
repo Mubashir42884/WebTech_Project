@@ -29,11 +29,11 @@
             <td align="center">
                 <form method="post" action="viewprofile.php" method="edit">
                 
-                    <fieldset style="width: 550px; border-radius: 30px;">
+                    <fieldset style="width: 750px; border-radius: 30px;">
                     <legend  style="color: #4e0755; border-radius: 5px;"><b>EDIT PROFILE</b></legend>
                     <table border="0">
-                        <tr style="font-size: 18px;">
-                            <td>Name</td>
+                        <tr style="font-size: 20px;">
+                            <td style="color: #4e0755;">Name</td>
                             <td> :
                                 <?php
                                 $name = $_SESSION['user']['name'];
@@ -42,8 +42,8 @@
                             </td>
                         </tr>
 
-                        <tr style="font-size: 18px;">
-                            <td>Email</td>
+                        <tr style="font-size: 20px;">
+                            <td style="color: #4e0755;">Email</td>
                             <td> : 
                                 <?php
                                 $email = $_SESSION['user']['email'];
@@ -52,8 +52,8 @@
                             </td>
                         </tr>
 
-                        <tr style="font-size: 18px;">
-                            <td>Phone No</td>
+                        <tr style="font-size: 20px;">
+                            <td style="color: #4e0755;">Phone No</td>
                             <td> : 
                                 <?php
                                 $phno=$_SESSION['user']['phno'];
@@ -62,8 +62,8 @@
                         </td>
                         </tr>
 
-                        <tr style="font-size: 18px;">
-                            <td>Gender </td>
+                        <tr style="font-size: 20px;">
+                            <td style="color: #4e0755;">Gender </td>
                             <td> : 
                                 
                                 <?php
@@ -73,8 +73,8 @@
                             </td>
                         </tr>
 
-                        <tr style="font-size: 18px;">
-                            <td>Date of Birth</td>
+                        <tr style="font-size: 20px;">
+                            <td style="color: #4e0755;">Date of Birth</td>
                             <td> :
                                     <?php
                                     $dob = $_SESSION['user']['dob'];
@@ -83,8 +83,8 @@
                             </td>
                         </tr>
 
-                        <tr style="font-size: 18px;">
-                            <td>Username</td>
+                        <tr style="font-size: 20px;">
+                            <td style="color: #4e0755;">Username</td>
                             <td> : <?php 
                             $username=$_SESSION['user']['username'];
                             echo($username); ?>
@@ -92,20 +92,18 @@
 
                 
 
-                        <tr style="font-size: 18px;">
-                            <td>Profile Picture</td>
-                            <td>
-                                
-                                    <?php
-                                    $dp=$_SESSION['user']['dp'];
-                                    echo($dp);
-                                    ?>
+                        <tr style="font-size: 20px;">
+                            <td style="color: #4e0755;">Profile Picture</td>
+                            <td> : 
+                                <?php
+                                $dp=$_SESSION['user']['dp'];
+                                echo ($dp);
+                                ?>
                             </td>
                         </tr>
-                        <tr style="font-size: 18px;">
+                        <tr style="font-size: 20px;">
                             <td colspan="2" align="center">
-                                <input type="submit" name="save" value="save" style="font-family:'Quicksand'; font-size: 18px;">
-                                
+                                <input type="submit" name="save" value="Save" style="font-family:'Quicksand'; font-size: 18px;">
                             </td>
                         </tr>
 

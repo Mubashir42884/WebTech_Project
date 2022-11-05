@@ -48,9 +48,9 @@
                         <tr style="font-size: 18px;">
                             <td>Gender </td>
                             <td> : 
-                                <input type="radio" name="Gender" value="Male" style="font-family:'Quicksand'; font-size: 18px;"> Male
-                                <input type="radio" name="Gender" value="Female" style="font-family:'Quicksand'; font-size: 18px;"> Female
-                                <input type="radio" name="Gender" value="Others" style="font-family:'Quicksand'; font-size: 18px;"> Others
+                                <input type="radio" id="male" name="gender" value="Male" style="font-family:'Quicksand'; font-size: 18px;"> <label for="male">Male</label>
+                                <input type="radio" id="female" name="gender" value="Female" style="font-family:'Quicksand'; font-size: 18px;"> <label for="female">Female</label>
+                                <input type="radio" id="others" name="gender" value="Others" style="font-family:'Quicksand'; font-size: 18px;"> <label for="others">Others</label>
                             </td>
                         </tr>
 
