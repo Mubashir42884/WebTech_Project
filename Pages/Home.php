@@ -8,12 +8,12 @@
         <tr bgcolor="#4e0755">
 
             <th style='border:white;' align="center" colspan="2">
-                <a href="Home.html" ><img src="Logo.png" height="180" ></a>
+                <a href="Home.php" ><img src="Logo.png" height="180" ></a>
 
                 <p style='border:none; font-size: 20;' align="right">
-                    <a href="Home.html" style="color: #99d9ea ;">Home</a>&nbsp;|&nbsp;&nbsp;
-                    <a href="Login" style="color: #99d9ea ;">Login</a>&nbsp;|&nbsp;&nbsp;
-                    <a href="Registration" style="color: #99d9ea ;">&nbsp;Registration</a>&nbsp;&nbsp;
+                    <a href="Home.php" style="color: #99d9ea ;">Home</a>&nbsp;|&nbsp;&nbsp;
+                    <a href="Login.php" style="color: #99d9ea ;">Login</a>&nbsp;|&nbsp;&nbsp;
+                    <a href="Signup.php" style="color: #99d9ea ;">&nbsp;Registration</a>&nbsp;&nbsp;
                 </p>
             </th>
         </tr>
