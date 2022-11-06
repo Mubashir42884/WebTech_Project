@@ -26,68 +26,65 @@
         </tr>
 
         <tr style="font-size: 26px;">
-            <td align="center">
-                <form method="post" action="viewprofile.php" method="edit">
+            <td align="left">
+                <form method="post" action="ViewProfile.php" method="edit">
                 
-                    <fieldset style="width: 750px; border-radius: 30px;">
+                    <fieldset style=" border-radius: 30px;">
                     <legend  style="color: #4e0755; border-radius: 5px;"><b>EDIT PROFILE</b></legend>
                     <table border="0">
                         <tr style="font-size: 20px;">
                             <td style="color: #4e0755;">Name</td>
                             <td> :
-                                <?php
-                                $name = $_SESSION['user']['name'];
-                                echo($name);
-                                ?>
+                            <input type="text" size="28" name="editname" id="editname" placeholder="<?php $name = $_SESSION['user']['name']; echo($name); ?>" style="font-family:'Quicksand'; font-size: 18px;" />
+                            <input type="reset" name="editname" id="editname" value="Reset" style="font-family:'Quicksand'; font-size: 18px;"/>
                             </td>
                         </tr>
 
                         <tr style="font-size: 20px;">
                             <td style="color: #4e0755;">Email</td>
                             <td> : 
-                                <?php
-                                $email = $_SESSION['user']['email'];
-                                echo($email);
-                                ?>
+                            <input type="text" readonly size="28" name="editname" id="editname"  placeholder="<?php $email = $_SESSION['user']['email']; echo($email);?>" style="font-family:'Quicksand'; font-size: 18px;" />
+                            <input type="reset" name="editname" id="editname" value="Reset" style="font-family:'Quicksand'; font-size: 18px;"/>
+                            
                             </td>
                         </tr>
 
                         <tr style="font-size: 20px;">
                             <td style="color: #4e0755;">Phone No</td>
                             <td> : 
-                                <?php
-                                $phno=$_SESSION['user']['phno'];
-                                echo($phno);
-                                ?>
+                            <input type="text" size="28" name="editname" id="editname" placeholder="<?php $phno = $_SESSION['user']['phno']; echo($phno);?>" style="font-family:'Quicksand'; font-size: 18px;" />
+                            <input type="reset" name="editname" id="editname" value="Reset" style="font-family:'Quicksand'; font-size: 18px;"/>
+                            
                         </td>
                         </tr>
 
                         <tr style="font-size: 20px;">
                             <td style="color: #4e0755;">Gender </td>
                             <td> : 
-                                
-                                <?php
-                                $gender = $_SESSION['user']['gender'];
-                                echo($gender);
-                                ?>
+                            <input type="text" readonly size="18" name="editname" id="editname" value="<?php $gender = $_SESSION['user']['gender']; echo($gender);?>" style="font-family:'Quicksand'; font-size: 18px;" />
+                            <select style="font-family:'Quicksand'; font-size: 18px;"><option value="Male">Male</option><option value="Female">Female</option><option value="Others">Others</option></select>
+                            <input type="reset" name="editname" id="editname" value="Reset" style="font-family:'Quicksand'; font-size: 18px;"/>
+                            
                             </td>
                         </tr>
 
                         <tr style="font-size: 20px;">
                             <td style="color: #4e0755;">Date of Birth</td>
                             <td> :
-                                    <?php
-                                    $dob = $_SESSION['user']['dob'];
-                                    echo($dob);
-                                    ?>
+                            <input type="text" readonly size="9" name="editname" id="editname" value="<?php $dob = $_SESSION['user']['dob']; echo($dob);?>" style="font-family:'Quicksand'; font-size: 18px;" />
+                            <input type="date" name="editdate" id="editdate" value="" style="font-family:'Quicksand'; font-size: 18px;"/>
+                            <input type="reset" name="editname" id="editname" value="Reset" style="font-family:'Quicksand'; font-size: 18px;"/>
+                            
                             </td>
                         </tr>
 
                         <tr style="font-size: 20px;">
                             <td style="color: #4e0755;">Username</td>
-                            <td> : <?php 
-                            $username=$_SESSION['user']['username'];
-                            echo($username); ?>
+                            <td> : 
+                            <input type="text" size="28" name="editname" id="editname" placeholder="<?php $username = $_SESSION['user']['username']; echo($username);?>" style="font-family:'Quicksand'; font-size: 18px;" />
+                            <input type="reset" name="editname" id="editname" value="Reset" style="font-family:'Quicksand'; font-size: 18px;"/>
+                            
+                            </td>
                         </tr>
 
                 
@@ -95,15 +92,15 @@
                         <tr style="font-size: 20px;">
                             <td style="color: #4e0755;">Profile Picture</td>
                             <td> : 
-                                <?php
-                                $dp=$_SESSION['user']['dp'];
-                                echo ($dp);
-                                ?>
+                                 <input type="text" size="10" name="editdp" id="editdp" value="<?php $dp = $_SESSION['user']['dp']; echo($dp);?>" style="font-family:'Quicksand'; font-size: 18px;" />
+                                 <br>&nbsp&nbsp<input type="file" name="editdp" id="editdp" value="" style="font-family:'Quicksand'; font-size: 18px;"/>
+                                 <br>&nbsp&nbsp<input type="reset" name="editname" id="editname" value="Reset" style="font-family:'Quicksand'; font-size: 18px;"/>
+                            
                             </td>
                         </tr>
-                        <tr style="font-size: 20px;">
+                        <tr style="font-size: 26px;">
                             <td colspan="2" align="center">
-                                <input type="submit" name="save" value="Save" style="font-family:'Quicksand'; font-size: 18px;">
+                                <input type="submit" name="save" value="Save" style="font-family:'Quicksand'; font-size: 22px;">
                             </td>
                         </tr>
 

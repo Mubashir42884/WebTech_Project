@@ -4,7 +4,7 @@
     <title>Homepage</title>
 </head>
 <body style="font-family: Quicksand ;">
-    <table border="1">
+    <table border="0">
         <tr bgcolor="#4e0755">
 
             <th style='border:white;' align="center" colspan="2">

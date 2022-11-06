@@ -82,7 +82,7 @@
                         </tr>
 
                         <tr style="font-size: 18px;">
-                            <td colspan="2" align="center"> <input type="checkbox" style="font-family:'Quicksand'; font-size: 18px; color: #red;"/> <b>Agree to Terms & Policy</b></td>
+                            <td colspan="2" align="center"> <input type="checkbox" style="font-family:'Quicksand'; font-size: 18px;"/> <b>Agree to Terms & Policy</b></td>
                         </tr>
                         <tr><td colspan="2"><br></td></tr>
                         <tr style="font-size: 18px;">
