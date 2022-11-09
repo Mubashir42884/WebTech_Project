@@ -1,8 +1,8 @@
 <?php 
     session_start();
 
-    if(isset($name) || isset($username) || isset($email) || isset($dob) || isset($phoneno) || isset($profilepic) || isset($gender)){
-        header('location: signup.php');
+    if(isset($name) || isset($username) || isset($email) || isset($dob) || isset($phoneno) || isset($profilepic) || isset($gender) || isset($dp_dest)) {
+        header('location: Signup.php');
     }
      
 ?>
@@ -99,13 +99,13 @@
 
                 
 
-                        <tr style="font-size: 20px;">
+                        <tr style="font-size: 20px;" valign=middle>
                             <td style="color: #4e0755;">Profile Picture</td>
-                            <td> : 
-                                <?php
-                                $dp=$_SESSION['user']['dp'];
-                                echo ($dp);
-                                ?>
+                            <td>
+                            <?php 
+                            $dp_src = "upload/".$_FILES['dp']['name'];
+                            ?>
+                            <img src="<?php echo $dp_src; ?>" height=150>
                             </td>
                         </tr>
 

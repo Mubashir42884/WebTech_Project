@@ -1,8 +1,4 @@
-<?php 
-    if(isset($_GET['err'])){
-        echo "null username/password";
-    }
-?>
+
 
 <html>
 <head>
@@ -32,17 +28,17 @@
                     <table border="0">
                         <tr style="font-size: 18px;">
                             <td>Name</td>
-                            <td> : <input size="35" type="text" name="name" value="" style="font-family:'Quicksand'; font-size: 18px;"></td>
+                            <td> : <input size="35" type="text" name="name" value="" style="font-family:'Quicksand'; font-size: 18px;"><span style="font-family:'Quicksand'; font-size: 18px; color: red;"> <b>*<b></span></td>
                         </tr>
 
                         <tr style="font-size: 18px;">
                             <td>Email</td>
-                            <td> : <input type="email" name="email" value="" style="font-family:'Quicksand'; font-size: 18px;"></td>
+                            <td> : <input type="email" name="email" value="" style="font-family:'Quicksand'; font-size: 18px;"> <span style="font-family:'Quicksand'; font-size: 18px; color: red;"> <b>*<b></span></td>
                         </tr>
 
                         <tr style="font-size: 18px;">
                             <td>Phone No</td>
-                            <td> : <input type="number" name="phno" value="" style="font-family:'Quicksand'; font-size: 18px;"></td>
+                            <td> : <input type="tel" name="phno" value="" style="font-family:'Quicksand'; font-size: 18px;"></td>
                         </tr>
 
                         <tr style="font-size: 18px;">
@@ -51,6 +47,7 @@
                                 <input type="radio" id="male" name="gender" value="Male" style="font-family:'Quicksand'; font-size: 18px;"> <label for="male">Male</label>
                                 <input type="radio" id="female" name="gender" value="Female" style="font-family:'Quicksand'; font-size: 18px;"> <label for="female">Female</label>
                                 <input type="radio" id="others" name="gender" value="Others" style="font-family:'Quicksand'; font-size: 18px;"> <label for="others">Others</label>
+                                <span style="font-family:'Quicksand'; font-size: 18px; color: red;"> <b>*<b></span>
                             </td>
                         </tr>
 
@@ -61,25 +58,19 @@
 
                         <tr style="font-size: 18px;">
                             <td>Username</td>
-                            <td> : <input type="text" name="username" value="" style="font-family:'Quicksand'; font-size: 18px;"></td>
+                            <td> : <input type="text" name="username" value="" style="font-family:'Quicksand'; font-size: 18px;"><span style="font-family:'Quicksand'; font-size: 18px; color: red;"> <b>*<b></span></td>
                         </tr>
 
                         <tr style="font-size: 18px;">
                             <td>Password</td>
-                            <td> : <input type="password" name="password" value="" style="font-family:'Quicksand'; font-size: 18px;"></td>
+                            <td> : <input type="password" name="password" value="" style="font-family:'Quicksand'; font-size: 18px;"><span style="font-family:'Quicksand'; font-size: 18px; color: red;"> <b>*<b></span></td>
                         </tr>
 
                         <tr style="font-size: 18px;">
                             <td>Confirm Password</td>
-                            <td> : <input type="password" name="password" value="" style="font-family:'Quicksand'; font-size: 18px;"></td>
+                            <td> : <input type="password" name="conpwd" value="" style="font-family:'Quicksand'; font-size: 18px;"><span style="font-family:'Quicksand'; font-size: 18px; color: red;"> <b>*<b></span></td>
                         </tr>
 
-                        <tr style="font-size: 18px;">
-                            <td>Profile Picture</td>
-                            <td>
-                               :  <input type="file" name="dp" style="font-family:'Quicksand'; font-size: 18px;">
-                            </td>
-                        </tr>
 
                         <tr style="font-size: 18px;">
                             <td colspan="2" align="center"> <input type="checkbox" style="font-family:'Quicksand'; font-size: 18px;"/> <b>Agree to Terms & Policy</b></td>

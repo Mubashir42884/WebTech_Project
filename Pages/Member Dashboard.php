@@ -40,6 +40,7 @@
                             <ul>
                                 <li><a href="ViewProfile.php" style="color: #4e0755;">View Profile</a></li>
                                 <li><a href="EditProfile.php" style="color: #4e0755;">Edit Profile</a></li>
+                                <li><a href="UploadDP.php" style="color: #4e0755;">Upload Profile Picture</a></li>
                                 <li><a href="Business Expense.html" style="color: #4e0755;">Corporate Account</a></li>
                                 <li><a href="ProfileSettings.php" style="color: #4e0755;">Profile Settings</a></li>
                             </ul>
