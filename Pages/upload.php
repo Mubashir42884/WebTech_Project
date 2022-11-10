@@ -18,7 +18,6 @@
                     $fileNewName = uniqid('', true).".".$fileActExt;
                     $file_dest = "upload/".$fileNewName;
                     move_uploaded_file($fileTmpName, $file_dest);
-                    header("Location: ViewProfile.php?upload_success");
                 }else{
                     echo "Your image is too big!"
                 }

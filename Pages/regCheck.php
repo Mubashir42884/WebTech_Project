@@ -8,6 +8,7 @@
     $email = $_POST['email'];
     $gender = $_POST['gender'];
     $dob = $_POST['dob'];
+    $dp = $_POST['dp'];
 
 
     //for validation pupose
@@ -43,7 +44,7 @@
     elseif (!$number || !$specialChars || $len_pwd < 4) {
         echo "<script>alert('Password must contain at least 4 characters with number and special character!');</script>";
     }else {
-        $user = ['username'=> $username, 'name'=> $name, "password"=> $password, "conpwd"=> $conpwd, "phno"=> $phno, "email"=> $email, "gender"=> $gender, "dob"=>$dob];
+        $user = ['username'=> $username, 'name'=> $name, "password"=> $password, "conpwd"=> $conpwd, "phno"=> $phno, "email"=> $email, "gender"=> $gender, "dob"=>$dob, "dp"=>$dp];
         $_SESSION['user'] = $user;
         header('location: Login.php');
     }

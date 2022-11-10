@@ -1,4 +1,4 @@
-﻿<?php
+﻿<?php 
     session_start();
 
     if(isset($name) || isset($username) || isset($email) || isset($dob) || isset($phoneno) || isset($profilepic) || isset($gender)){
@@ -35,7 +35,7 @@
 
         <tr style="font-size: 26px;">
             <td align="center">
-                <form method="post" action="ViewProfile.php" enctype="multipart/form-data">
+                <form method="post" action="editCheck.php" enctype="multipart/form-data">
 
                     <fieldset style=" border-radius: 30px;">
                         <legend style="color: #4e0755; border-radius: 5px;"><b>UPLOAD PROFILE PICTURE</b></legend>
@@ -46,16 +46,14 @@
                                 <td>
                                         <img src="upload_dp.png" height=120>
                                         <br><input type="file" name="dp" style="font-family:'Quicksand'; font-size: 18px;">
+                                        <input type="submit" name="dpsave" value="Upload" style="font-family:'Quicksand'; font-size: 22px; font-weight:500;">
+
                                 </td>
                             </tr>
                             <tr style="font-size: 26px;">
                                 <td colspan="3" align="center">
-                                <input type="submit" name="dpsave" value="Upload" style="font-family:'Quicksand'; font-size: 22px; font-weight:500;">
                                 </td>
                             </tr>
-
-
-
                         </table>
                     </fieldset>
                 </form>

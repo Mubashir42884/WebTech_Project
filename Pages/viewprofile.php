@@ -19,7 +19,6 @@
 
             <th style='border:white;' align="center" colspan="2">
                 <a href="Member Dashboard.php"><img src="Logo.png" height="180"></a>
-
                 <p style='border:none; font-size: 20;' align="right">
                     <a href="ViewProfile.php" style="color: #99d9ea ;">
                     <?php 
@@ -35,7 +34,7 @@
 
         <tr style="font-size: 26px;">
             <td align="center">
-                <form method="post" action="regCheck.php">
+                <form method="post" action="">
                 
                     <fieldset style="width: 750px; border-radius: 30px;">
                     <legend  style="color: #4e0755; border-radius: 5px;"><b>VIEW PROFILE</b></legend>
@@ -97,20 +96,16 @@
                             echo($username); ?>
                         </tr>
 
-                
-
-                        <tr style="font-size: 20px;" valign=middle>
+                        <tr style="font-size: 20px;" valign=top>
                             <td style="color: #4e0755;">Profile Picture</td>
                             <td>
                             <?php 
-                            $dp_src = "upload/".$_FILES['dp']['name'];
+                            $dp_src = "upload/".$_SESSION['user']['dp'];
+                            echo "<img src=".$dp_src." height=200 weight=200>";
                             ?>
-                            <img src="<?php echo $dp_src; ?>" height=150>
+                            
                             </td>
-                        </tr>
-
-                        
-                        
+                        </tr> 
                     </table>
                     </fieldset>
                 </form>
