@@ -1,15 +1,16 @@
 <?php 
     session_start();
 
-    if(isset($name) || isset($username) || isset($email) || isset($dob) || isset($phoneno) || isset($profilepic) || isset($gender)){
+    if(isset($name) || isset($username) || isset($email) || isset($dob) || isset($phoneno) || isset($profilepic) || isset($salary) || isset($dp_dest)) {
         header('location: signup.php');
     }
      
 ?>
+
 <html>
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>View Profile</title>
+    <title>View Assistant Profile</title>
 </head>
 
 <body style="font-family: Quicksand ;">
@@ -17,7 +18,8 @@
         <tr bgcolor="#4e0755">
 
             <th style='border:white;' align="center" colspan="2">
-                <a href="Member Dashboard.php"><img src="Logo.png" height="180"></a>
+                <a href="Manager Dashboard.php"><img src="Logo.png" height="180"></a>
+
 
                 <p style='border:none; font-size: 20;' align="right">
                     <a href="ViewProfile.php" style="color: #99d9ea ;">
@@ -37,8 +39,19 @@
                 <form method="post" action="regCheck.php">
                 
                     <fieldset style="width: 750px; border-radius: 30px;">
-                    <legend  style="color: #4e0755; border-radius: 5px;"><b>VIEW PROFILE</b></legend>
+                    <legend  style="color: #4e0755; border-radius: 5px;"><b>VIEW ASSISTANT PROFILE</b></legend>
                     <table border="0">
+                    <form action="#">
+                                        
+                        <select name="languages" id="lang">
+                        <option value="javascript">JavaScript</option>
+                        <option value="php">PHP</option>
+                        <option value="java">Java</option>
+                   
+                        </select>
+                        <input type="button" value="Search">
+                                                                
+                    </form> 
                         <tr style="font-size: 20px;">
                             <td style="color: #4e0755;">Name</td>
                             <td> :
@@ -70,24 +83,16 @@
                         </tr>
 
                         <tr style="font-size: 20px;">
-                            <td style="color: #4e0755;">Gender </td>
+                            <td style="color: #4e0755;">Salary</td>
                             <td> : 
                                 <?php
-                                $gender = $_SESSION['user']['gender'];
-                                echo($gender);
+                                $salary = $_SESSION['user']['salary'];
+                                echo($salary);
                                 ?>
                             </td>
                         </tr>
 
-                        <tr style="font-size: 20px;">
-                            <td style="color: #4e0755;">Date of Birth</td>
-                            <td> :
-                                    <?php
-                                    $dob = $_SESSION['user']['dob'];
-                                    echo($dob);
-                                    ?>
-                            </td>
-                        </tr>
+               
 
                         <tr style="font-size: 20px;">
                             <td style="color: #4e0755;">Username</td>
@@ -98,13 +103,13 @@
 
                 
 
-                        <tr style="font-size: 20px;">
+                        <tr style="font-size: 20px;" valign=middle>
                             <td style="color: #4e0755;">Profile Picture</td>
-                            <td> : 
-                                <?php
-                                $dp=$_SESSION['user']['dp'];
-                                echo ($dp);
-                                ?>
+                            <td>
+                            <?php 
+                            $dp_src = "upload/".$_FILES['dp']['name'];
+                            ?>
+                            <img src="<?php echo $dp_src; ?>" height=150>
                             </td>
                         </tr>
 
