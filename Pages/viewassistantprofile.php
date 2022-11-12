@@ -18,9 +18,7 @@
         <tr bgcolor="#4e0755">
 
             <th style='border:white;' align="center" colspan="2">
-                <a href="Manager Dashboard.php"><img src="Logo.png" height="180"></a>
-
-
+                <a href="Member Dashboard.php"><img src="Logo.png" height="180"></a>
                 <p style='border:none; font-size: 20;' align="right">
                     <a href="ViewProfile.php" style="color: #99d9ea ;">
                     <?php 
@@ -38,22 +36,24 @@
             <td align="center">
                 <form method="post" action="regCheck.php">
                 
-                    <fieldset style="width: 750px; border-radius: 30px;">
+                    <fieldset style="width: 900px; border-radius: 30px;">
                     <legend  style="color: #4e0755; border-radius: 5px;"><b>VIEW ASSISTANT PROFILE</b></legend>
                     <table border="0">
                     <form action="#">
                                         
-                        <select name="languages" id="lang">
-                        <option value="javascript">JavaScript</option>
-                        <option value="php">PHP</option>
-                        <option value="java">Java</option>
+                        <select name="Assistants" id="asst" style="font-family:'Quicksand'; font-size: 18px;">
+                        <option value="Kennedy Klaus">Kennedy Klaus</option>
+                        <option value="Hannah Juggler">Hannah Juggler</option>
+                        <option value="Mason Jojoa">Mason Jojoa</option>
+                        <option value="Kristoff Berghaus">Kristoff Berghaus</option>
                    
                         </select>
-                        <input type="button" value="Search">
+                        <input type="button" value="Search" style="font-family:'Quicksand'; font-size: 17px;">
                                                                 
-                    </form> 
+                    </form>
                         <tr style="font-size: 20px;">
-                            <td style="color: #4e0755;">Name</td>
+                        <br><br>
+                            <td width="170" style="color: #4e0755;">Name</td>
                             <td> :
                                 <?php
                                 $name = $_SESSION['user']['name'];
@@ -86,8 +86,13 @@
                             <td style="color: #4e0755;">Salary</td>
                             <td> : 
                                 <?php
+
                                 $salary = $_SESSION['user']['salary'];
-                                echo($salary);
+                                if($salary == ""){
+                                    echo "N/A";
+                                }else{
+                                    echo $salary;
+                                }
                                 ?>
                             </td>
                         </tr>
@@ -103,15 +108,16 @@
 
                 
 
-                        <tr style="font-size: 20px;" valign=middle>
+                        <tr style="font-size: 20px;" valign=top>
                             <td style="color: #4e0755;">Profile Picture</td>
                             <td>
                             <?php 
-                            $dp_src = "upload/".$_FILES['dp']['name'];
+                            $dp_src = "upload/".$_SESSION['user']['dp'];
+                            echo "<img src=".$dp_src." height=200 weight=200>";
                             ?>
-                            <img src="<?php echo $dp_src; ?>" height=150>
+                            
                             </td>
-                        </tr>
+                        </tr> 
 
                         
                         
