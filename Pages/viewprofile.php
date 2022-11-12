@@ -1,11 +1,12 @@
 <?php 
     session_start();
 
-    if(isset($name) || isset($username) || isset($email) || isset($dob) || isset($phoneno) || isset($profilepic) || isset($gender)){
-        header('location: signup.php');
+    if(isset($name) || isset($username) || isset($email) || isset($dob) || isset($phoneno) || isset($profilepic) || isset($gender) || isset($dp_dest)) {
+        header('location: Signup.php');
     }
      
 ?>
+
 <html>
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -18,7 +19,6 @@
 
             <th style='border:white;' align="center" colspan="2">
                 <a href="Member Dashboard.php"><img src="Logo.png" height="180"></a>
-
                 <p style='border:none; font-size: 20;' align="right">
                     <a href="ViewProfile.php" style="color: #99d9ea ;">
                     <?php 
@@ -34,7 +34,7 @@
 
         <tr style="font-size: 26px;">
             <td align="center">
-                <form method="post" action="regCheck.php">
+                <form method="post" action="">
                 
                     <fieldset style="width: 750px; border-radius: 30px;">
                     <legend  style="color: #4e0755; border-radius: 5px;"><b>VIEW PROFILE</b></legend>
@@ -96,20 +96,16 @@
                             echo($username); ?>
                         </tr>
 
-                
-
-                        <tr style="font-size: 20px;">
+                        <tr style="font-size: 20px;" valign=top>
                             <td style="color: #4e0755;">Profile Picture</td>
-                            <td> : 
-                                <?php
-                                $dp=$_SESSION['user']['dp'];
-                                echo ($dp);
-                                ?>
+                            <td>
+                            <?php 
+                            $dp_src = "upload/".$_SESSION['user']['dp'];
+                            echo "<img src=".$dp_src." height=200 weight=200>";
+                            ?>
+                            
                             </td>
-                        </tr>
-
-                        
-                        
+                        </tr> 
                     </table>
                     </fieldset>
                 </form>
