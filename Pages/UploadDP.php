@@ -37,7 +37,7 @@
             <td align="center">
                 <form method="post" action="editCheck.php" enctype="multipart/form-data">
 
-                    <fieldset style=" border-radius: 30px;">
+                    <fieldset style=" border-radius: 30px; width: 750px;">
                         <legend style="color: #4e0755; border-radius: 5px;"><b>UPLOAD PROFILE PICTURE</b></legend>
                         <table border="0">
                             <tr style="font-size: 20px;">
