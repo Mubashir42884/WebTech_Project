@@ -16,7 +16,6 @@
 <body style="font-family: Quicksand ;">
     <table border="0">
         <tr bgcolor="#4e0755">
-
             <th style='border:white;' align="center" colspan="2">
                 <a href="Member Dashboard.php"><img src="Logo.png" height="180"></a>
                 <p style='border:none; font-size: 20;' align="right">

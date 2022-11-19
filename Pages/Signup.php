@@ -11,9 +11,7 @@
 
                 <p style='border:none; font-size: 20;' align="right">
                     <a href="Home.php" style="color: #99d9ea ;">Home</a>&nbsp;|&nbsp;&nbsp;
-                    <a href="Login.php" style="color: #99d9ea ;">Login</a>&nbsp;|&nbsp;&nbsp;
-                    <a href="Signup.php" style="color: #99d9ea ;">&nbsp;Registration</a>&nbsp;&nbsp;
-                </p>
+                    <a href="Login.php" style="color: #99d9ea ;">Login</a>&nbsp;&nbsp;&nbsp;                </p>
             </th>
         </tr>
 
@@ -71,7 +69,7 @@
 
 
                         <tr style="font-size: 18px;">
-                            <td colspan="2" align="center"> <input type="checkbox" style="font-family:'Quicksand'; font-size: 18px;"/> <b>Agree to Terms & Policy</b></td>
+                            <td colspan="2" align="center"> <input type="checkbox" style="font-family:'Quicksand'; font-size: 18px;" required/> <b>Agree to Terms & Policy</b></td>
                         </tr>
                         <tr><td colspan="2"><br></td></tr>
                         <tr style="font-size: 18px;">

@@ -25,7 +25,7 @@
                         echo($username);
                     ?>
                     </a>&nbsp;|&nbsp;
-                    <a href="Home.php" style="color: #99d9ea ;">Home</a>&nbsp;|&nbsp;&nbsp;
+                    <a href="Member Dashboard.php" style="color: #99d9ea ;">Home</a>&nbsp;|&nbsp;&nbsp;
                     <a href="Logout.php" style="color: #99d9ea ;">&nbsp;Log Out</a>&nbsp;&nbsp;
                 </p>
             </th>
